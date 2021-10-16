@@ -1,0 +1,24 @@
+.iconBackground {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, lightblue 50%, rgb(29, 68, 82) 50%) right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+}
+
+.iconBackground:hover {
+  /* background-color: blue; */
+  cursor: pointer;
+  background-position: left;
+}
+
+.container {
+  position: absolute;
+  z-index: 3;
+  top: 4rem;
+  right: 40rem;
+}
