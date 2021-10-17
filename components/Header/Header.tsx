@@ -1,13 +1,24 @@
 import Image from 'next/image';
 import SocialLinks from '../SocialLinks';
-import headerImage from '../../public/Coral-Environment-01.png';
+import { Container, Row, Col } from 'react-bootstrap';
+import headerImage from '../../public/Coral-Environment.png';
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <>
-      <h1 className={styles.title}>NumuVerse</h1>
-      <SocialLinks />
+      <Container>
+        <Row>
+          <Col>
+            <h1 style={{ textAlign: 'left' }} className={styles.title}>
+              MetaMorfs
+            </h1>
+          </Col>
+          <Col md={{ span: 2, offset: 4 }}>
+            <SocialLinks />
+          </Col>
+        </Row>
+      </Container>
       <Image
         src={headerImage}
         alt='banner image'
