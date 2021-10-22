@@ -1,7 +1,6 @@
 .aboutSection {
-  background-color: #01030d;
-  height: 40rem;
+  background-color: #56e1ff;
+  padding-bottom: 2rem;
   justify-content: center;
   align-items: center;
-  /* width: 100rem; */
 }

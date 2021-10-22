@@ -1,29 +1,27 @@
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from './AboutSection.module.css';
+import numuImage from '../../public/Numu-Barnacle-No-BKG.png';
 
 const AboutSection = () => {
   return (
     <Container fluid className={styles.aboutSection}>
       <Row>
-        <Col md={{ span: 2, offset: 4 }}>
+        <Col>
           <div
             style={{
-              paddingTop: '8rem',
+              paddingTop: '1rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
-            <Image
-              src='/Small-Platform.png'
-              alt='gif place holder'
-              width={300}
-              height={300}
-            />
+            <Image src={numuImage} alt='numu image' width={350} height={350} />
           </div>
         </Col>
         <Col>
           <div
             style={{
-              color: '#848198',
               fontSize: '20px',
               justifyContent: 'center',
               alignItems: 'center',
@@ -37,21 +35,15 @@ const AboutSection = () => {
               }}
               className='sectionTitle'
             >
-              What are MetaMorfs
+              Meet the Numus.
             </h1>
-            <p>
-              Fusce vel eros eget ex lobortis luctus nec sed nisl. Aliquam id
-              efficitur arcu, in vulputate lacus. Sed sed arcu ac urna hendrerit
-              ultricies. Fusce vel eros eget ex lobortis luctus nec sed nisl.
-              Aliquam id efficitur arcu, in vulputate lacus. Sed sed arcu ac
-              urna hendrerit ultricies.{' '}
-            </p>
-            <p>
-              Nulla semper condimentum fermentum. Aliquam erat volutpat. Fusce
-              scelerisque, leo et eleifend facilisis. Nulla semper condimentum
-              fermentum. Aliquam erat volutpat. Fusce scelerisque, leo et
-              eleifend facilisis.
-            </p>
+            <div className='textColor'>
+              <p>Numus are what they eat - making each one of them unique! </p>
+
+              <p> They live in one of five different environments. </p>
+              <p>All numus are hand drawn, unique NFT&#39;s</p>
+              <p>Collect your team and prepare for battle! </p>
+            </div>
           </div>
         </Col>
       </Row>
