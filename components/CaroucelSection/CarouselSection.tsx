@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { Carousel } from 'react-bootstrap';
-import coralEnv from '../../public/Coral-Environment.png';
-import desertEnv from '../../public/Desert-Environment-01.png';
+import coralEnv from '../../public/OG_Coral_001.png';
+import desertEnv from '../../public/OG_Desert_026.png';
 
 const CaroucelSection = () => {
   return (
-    <Carousel>
+    <Carousel style={{ margin: '0', padding: '0' }}>
       <Carousel.Item interval={2000}>
         <Image src={coralEnv} alt='coral environment' />
       </Carousel.Item>
