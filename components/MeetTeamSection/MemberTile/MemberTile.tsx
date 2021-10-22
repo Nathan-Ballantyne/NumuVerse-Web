@@ -12,14 +12,21 @@ const MemberTile = ({ pfpImage, name, role }: MemberTileProps) => {
       style={{
         width: '20rem',
         textAlign: 'center',
-        backgroundColor: '#01030D',
+        backgroundColor: '#FF7BEA',
+        border: 'none',
       }}
     >
       <Card.Img variant='top' src={pfpImage} />
       <Card.Title
-        style={{ padding: '1rem', fontSize: '1.5rem', color: 'lightblue' }}
+        style={{
+          padding: '1rem',
+          color: 'black',
+          textAlign: 'left',
+          fontSize: '2rem',
+        }}
+        className='sectionTitle'
       >
-        {name + ` (${role})`}
+        {name + ` - ${role}`}
       </Card.Title>
     </Card>
   );

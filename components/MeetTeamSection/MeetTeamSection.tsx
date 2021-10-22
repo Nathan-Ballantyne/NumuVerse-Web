@@ -1,40 +1,32 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import MemberTile from './MemberTile';
+import styles from './MeetTeamSection.module.css';
 
 const MeetTeamSection = () => {
   return (
     <div>
-      <h1
-        style={{ paddingBottom: '1.5rem' }}
-        className='sectionTitle centerText'
-      >
+      <h1 className={['sectionTitle', 'centerText', styles.title].join(' ')}>
         Meet the Team!
       </h1>
-      <Container fluid>
-        <Row>
-          <Col>
-            <MemberTile
-              pfpImage='/Small-Platform.png'
-              name='Member Name'
-              role='Role'
-            />
-          </Col>
-          <Col>
-            <MemberTile
-              pfpImage='/Small-Platform.png'
-              name='Member Name'
-              role='Role'
-            />
-          </Col>
-          <Col>
-            <MemberTile
-              pfpImage='/Small-Platform.png'
-              name='Member Name'
-              role='Role'
-            />
-          </Col>
-        </Row>
-      </Container>
+      <div className={styles.container}>
+        <Container fluid>
+          <Row>
+            <Col>
+              <MemberTile pfpImage='/Numu_Sue.png' name='SUE' role='ART' />
+            </Col>
+            <Col>
+              <MemberTile
+                pfpImage='/Numu-Nathan.png'
+                name='NATHAN'
+                role='TECH'
+              />
+            </Col>
+            <Col>
+              <MemberTile pfpImage='/Numu_Matt.png' name='MATT' role='DESIGN' />
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };
