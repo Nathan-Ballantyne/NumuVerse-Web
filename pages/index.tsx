@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import AboutSection from '../components/AboutSection';
 import CaroucelSection from '../components/CaroucelSection';
 import Roadmap from '../components/Roadmap';
-import FAQSection from '../components/FAQSection';
+// import FAQSection from '../components/FAQSection';
 import MeetTeamSection from '../components/MeetTeamSection';
 import CommunitySection from '../components/CommunitySection';
 
@@ -20,20 +20,20 @@ const centerStyle = {
 
 const Home: NextPage = () => {
   return (
-    <div style={{ backgroundColor: '#01030d' }}>
+    <div>
       <Head>
-        <title>MetaMorfs</title>
+        <title>NumuVerse</title>
         <meta
           name='description'
           content='Home of the MetaMorfs NFT collection'
         />
-        <link rel='icon' href='/Background-Test-Forest-Circle.png' />
+        <link rel='icon' href='/NumuLogo.ico' />
       </Head>
       <Header />
 
-      <Container fluid>
+      <Container style={{ margin: '0', padding: '0' }} fluid>
         <Row>
-          <Col style={centerStyle}>
+          <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
             <AboutSection />
           </Col>
         </Row>
@@ -43,31 +43,31 @@ const Home: NextPage = () => {
           </Col>
         </Row>
         <Row>
-          <Col style={centerStyle}>
+          <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
             <Roadmap />
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col style={centerStyle}>
             <FAQSection />
           </Col>
-        </Row>
+        </Row> */}
         <Row>
-          <Col style={centerStyle}>
+          <Col style={{ ...centerStyle, backgroundColor: '#FF7BEA' }}>
             <MeetTeamSection />
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
             <CommunitySection />
           </Col>
         </Row>
       </Container>
 
       <footer className={styles.footer}>
-        MetaMorfs {'  '}
+        NumuVerse {'  '}
         <Image
-          src='/Background-Test-Forest-Circle.png'
+          src='/NumuLogo.png'
           alt='MetaMorf image'
           width={30}
           height={30}
