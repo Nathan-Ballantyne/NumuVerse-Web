@@ -1,41 +1,48 @@
 import RoadmapItem from './RoadmapItem';
+import styles from './Roadmap.module.css';
 
-const roadmapItems: { title: string; text: string }[] = [
+const roadmapItems: { title: string; sentences: string[] }[] = [
   {
-    title: '.01 Launch 151 OGs',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida semper ex, vel vulputate ipsum vehicula at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce feugiat elit sit amet felis facilisis, elementum fringilla enim tincidunt. Morbi sed arcu ut ex fringilla tempus id sed mi. Suspendisse mollis ligula sed orci facilisis eleifend. Duis eu orci nec turpis posuere sollicitudin in sit amet purus.',
+    title: "01 - Launch The OG's",
+    sentences: [
+      "It all begins with the OG's. A collection of 151 completely unique, hand drawn (non-generated) NFTs.",
+      "Each of the 151 OG's comes with it's own unique banner sized art to accompany your PFP wherever it may be displayed.",
+    ],
   },
   {
-    title: '.02 Launch 10k',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida semper ex, vel vulputate ipsum vehicula at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce feugiat elit sit amet felis facilisis, elementum fringilla enim tincidunt. Morbi sed arcu ut ex fringilla tempus id sed mi. Suspendisse mollis ligula sed orci facilisis eleifend. Duis eu orci nec turpis posuere sollicitudin in sit amet purus.',
+    title: '02 - Release Gen 2',
+    sentences: [
+      'Following the OGs, 10,000 more numus will be released in December 2021. ',
+      'This collection is all hand drawn, digitally generated and carefully curated to ensure the highest quality. ',
+      '5% of minting profits will be donated to an environmental charity.',
+      'Gather your team and prepare yourself to venture into NumuVerse!',
+    ],
   },
   {
-    title: '.03 Launch Merch Line',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida semper ex, vel vulputate ipsum vehicula at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce feugiat elit sit amet felis facilisis, elementum fringilla enim tincidunt. Morbi sed arcu ut ex fringilla tempus id sed mi. Suspendisse mollis ligula sed orci facilisis eleifend. Duis eu orci nec turpis posuere sollicitudin in sit amet purus.',
+    title: '03 - Expand NumuVerse',
+    sentences: [
+      'NumuVerse has a lot of potential outside of the NFT space.',
+      'We hope to explore some of our ideas, such as merch, during this phase and expand NumuVerse into the real world.',
+    ],
   },
   {
-    title: '.04 Launch Video Game',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida semper ex, vel vulputate ipsum vehicula at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce feugiat elit sit amet felis facilisis, elementum fringilla enim tincidunt. Morbi sed arcu ut ex fringilla tempus id sed mi. Suspendisse mollis ligula sed orci facilisis eleifend. Duis eu orci nec turpis posuere sollicitudin in sit amet purus.',
+    title: '04 - Prepare For Battle',
+    sentences: [
+      'Our team is passionate about gaming and have designed NumuVerse with this in mind. ',
+      'We would love to bring NumuVerse to life through a unique battle game where teams of 3 can test their skills against each other.',
+    ],
   },
 ];
 
 const Roadmap = () => {
   return (
-    <div>
-      <div
-        style={{
-          width: '50rem',
-          padding: '2rem',
-          margin: '2rem',
-          textAlign: 'center',
-        }}
-      >
-        <h1 className='sectionTitle'>Roadmap</h1>
-        <p style={{ color: '#848198' }}>
-          This roadmap outlines our goals and where we want to take MetaMorfs.
-          We have a lot of ideas and concepts that we are working on. It may
-          evolve over time and hopefully become even better!
-        </p>
+    <div
+      style={{
+        width: '100%',
+      }}
+    >
+      <div className={styles.details}>
+        <h1 className='titleColorWhite'>Roadmap</h1>
       </div>
       {roadmapItems.map((item) => (
         <RoadmapItem key={item.title} {...item} />

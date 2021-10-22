@@ -2,24 +2,40 @@ import { Row, Col, Card } from 'react-bootstrap';
 
 type RoadmapItemProps = {
   title: string;
-  text: string;
+  sentences: string[];
 };
 
-const RoadmapItem = ({ title, text }: RoadmapItemProps) => {
+const RoadmapItem = ({ title, sentences }: RoadmapItemProps) => {
   return (
-    <Card
+    <div
       style={{
-        width: '50rem',
-        backgroundColor: '#04091A',
-        padding: '2rem',
-        margin: '2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
-      <Card.Body>
-        <Card.Title style={{ color: 'lightblue' }}>{title}</Card.Title>
-        <Card.Text style={{ color: '#848198' }}>{text}</Card.Text>
-      </Card.Body>
-    </Card>
+      <div
+        style={{
+          width: '50rem',
+        }}
+      >
+        <h2 className='titleColorWhite'>{title}</h2>
+        <div
+          style={{
+            backgroundColor: '#CEE8FF',
+            width: '100%',
+            padding: '2rem',
+            margin: '2rem 2rem 2rem 0',
+            borderRadius: '0.2rem',
+          }}
+          className='textColor'
+        >
+          {sentences.map((sentence) => (
+            <p key={sentence}>{sentence}</p>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
