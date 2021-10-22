@@ -8,21 +8,31 @@ const SocialLinks = () => {
     <div className={styles.container}>
       <Container>
         <Row>
-          <Col>
+          <a
+            href='https://twitter.com/NumuVerse'
+            target='_blank'
+            rel='noreferrer'
+            style={{ display: 'inline-block' }}
+          >
             <div className={styles.iconBackground}>
               <Image src='/twitter.svg' alt='Twitter' height={30} width={30} />
             </div>
-          </Col>
-          <Col>
-            <div className={styles.iconBackground}>
-              <Image src='/opensea.svg' alt='Opensea' height={30} width={30} />
-            </div>
-          </Col>
-          <Col>
+          </a>
+
+          {/* <div className={styles.iconBackground}>
+            <Image src='/opensea.svg' alt='Opensea' height={30} width={30} />
+          </div> */}
+
+          <a
+            href='https://discord.gg/3ZesqdJnWD'
+            target='_blank'
+            rel='noreferrer'
+            style={{ display: 'inline-block' }}
+          >
             <div className={styles.iconBackground}>
               <Image src='/discord.svg' alt='Discord' height={30} width={30} />
             </div>
-          </Col>
+          </a>
         </Row>
       </Container>
     </div>

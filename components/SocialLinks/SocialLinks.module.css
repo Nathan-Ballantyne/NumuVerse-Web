@@ -8,6 +8,7 @@
   background: linear-gradient(to left, lightblue 50%, rgb(29, 68, 82) 50%) right;
   background-size: 200%;
   transition: 0.3s ease-out;
+  margin: 0.5rem;
 }
 
 .iconBackground:hover {
