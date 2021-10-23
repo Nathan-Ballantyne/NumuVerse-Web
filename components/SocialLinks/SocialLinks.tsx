@@ -8,31 +8,43 @@ const SocialLinks = () => {
     <div className={styles.container}>
       <Container>
         <Row>
-          <a
-            href='https://twitter.com/NumuVerse'
-            target='_blank'
-            rel='noreferrer'
-            style={{ display: 'inline-block' }}
-          >
-            <div className={styles.iconBackground}>
-              <Image src='/twitter.svg' alt='Twitter' height={30} width={30} />
-            </div>
-          </a>
+          <Col>
+            <a
+              href='https://twitter.com/NumuVerse'
+              target='_blank'
+              rel='noreferrer'
+              style={{ display: 'inline-block' }}
+            >
+              <div className={styles.iconBackground}>
+                <Image
+                  src='/twitter.svg'
+                  alt='Twitter'
+                  height={30}
+                  width={30}
+                />
+              </div>
+            </a>
 
-          {/* <div className={styles.iconBackground}>
+            {/* <div className={styles.iconBackground}>
             <Image src='/opensea.svg' alt='Opensea' height={30} width={30} />
           </div> */}
 
-          <a
-            href='https://discord.gg/3ZesqdJnWD'
-            target='_blank'
-            rel='noreferrer'
-            style={{ display: 'inline-block' }}
-          >
-            <div className={styles.iconBackground}>
-              <Image src='/discord.svg' alt='Discord' height={30} width={30} />
-            </div>
-          </a>
+            <a
+              href='https://discord.gg/j74fJh4aNv'
+              target='_blank'
+              rel='noreferrer'
+              style={{ display: 'inline-block' }}
+            >
+              <div className={styles.iconBackground}>
+                <Image
+                  src='/discord.svg'
+                  alt='Discord'
+                  height={30}
+                  width={30}
+                />
+              </div>
+            </a>
+          </Col>
         </Row>
       </Container>
     </div>
