@@ -1,4 +1,5 @@
 import { Card, Button } from 'react-bootstrap';
+import { SOCIALLINKS } from '../../constants';
 import styles from './CommunitySection.module.css';
 
 const CommunitySection = () => {
@@ -22,7 +23,7 @@ const CommunitySection = () => {
             </p>
           </div>
           <a
-            href='https://discord.gg/j74fJh4aNv'
+            href={SOCIALLINKS.DISCORD}
             target='_blank'
             rel='noreferrer'
             style={{ display: 'inline-block' }}

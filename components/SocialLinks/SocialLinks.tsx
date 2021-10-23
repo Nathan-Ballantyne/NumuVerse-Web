@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
+import { SOCIALLINKS } from '../../constants';
 
 import styles from './SocialLinks.module.css';
 
@@ -10,7 +11,7 @@ const SocialLinks = () => {
         <Row>
           <Col>
             <a
-              href='https://twitter.com/NumuVerse'
+              href={SOCIALLINKS.TWITTER}
               target='_blank'
               rel='noreferrer'
               style={{ display: 'inline-block' }}
@@ -30,7 +31,7 @@ const SocialLinks = () => {
           </div> */}
 
             <a
-              href='https://discord.gg/j74fJh4aNv'
+              href={SOCIALLINKS.DISCORD}
               target='_blank'
               rel='noreferrer'
               style={{ display: 'inline-block' }}
