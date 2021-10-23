@@ -7,11 +7,11 @@ const CommunitySection = () => {
       <Card className={styles.card}>
         <Card.Body>
           <Card.Title>
-            <h2 className={['sectionTitle', styles.title].join(' ')}>
+            <h2 className={['titleColorWhite', styles.title].join(' ')}>
               Join the community
             </h2>
           </Card.Title>
-          <Card.Text style={{ paddingBottom: '1rem' }} className='textColor'>
+          <div style={{ paddingBottom: '1rem' }} className='titleColorWhite'>
             <p>
               We numus are a friendly bunch, come and join in the fun over on
               discord!
@@ -20,7 +20,7 @@ const CommunitySection = () => {
               All announcements will be made within discord ahead of our
               official social channels.
             </p>
-          </Card.Text>
+          </div>
           <a
             href='https://discord.gg/3ZesqdJnWD'
             target='_blank'
