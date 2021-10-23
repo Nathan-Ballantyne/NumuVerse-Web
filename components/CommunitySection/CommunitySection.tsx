@@ -22,7 +22,7 @@ const CommunitySection = () => {
             </p>
           </div>
           <a
-            href='https://discord.gg/3ZesqdJnWD'
+            href='https://discord.gg/j74fJh4aNv'
             target='_blank'
             rel='noreferrer'
             style={{ display: 'inline-block' }}
