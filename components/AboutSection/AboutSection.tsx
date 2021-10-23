@@ -25,7 +25,7 @@ const AboutSection = () => {
               fontSize: '20px',
               justifyContent: 'center',
               alignItems: 'center',
-              width: '30rem',
+              width: '40%',
             }}
           >
             <h1
