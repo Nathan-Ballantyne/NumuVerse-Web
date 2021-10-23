@@ -12,7 +12,7 @@ const MemberTile = ({ pfpImage, name, role }: MemberTileProps) => {
       style={{
         width: '20rem',
         textAlign: 'center',
-        backgroundColor: '#FF7BEA',
+        backgroundColor: '#56E1FF',
         border: 'none',
       }}
     >
