@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /* background-color: #01030d; */
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #547094;
 }
 
 a {
@@ -23,7 +23,7 @@ a {
 
 .sectionTitle {
   color: black;
-  font-family: 'Mali', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
@@ -33,13 +33,13 @@ a {
 
 .titleColorWhite {
   color: white;
-  font-family: 'Mali', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
 .textColor {
   color: black;
-  font-family: 'Mali', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
 }
