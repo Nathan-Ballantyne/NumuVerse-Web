@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <title>NumuVerse</title>
         <meta
           name='description'
-          content='Home of the MetaMorfs NFT collection'
+          content='Home of the NumuVerse NFT collection'
         />
         <link rel='icon' href='/NumuLogo.ico' />
       </Head>
