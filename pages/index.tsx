@@ -20,7 +20,7 @@ const centerStyle = {
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>NumuVerse</title>
         <meta
@@ -29,51 +29,60 @@ const Home: NextPage = () => {
         />
         <link rel='icon' href='/NumuLogo.ico' />
       </Head>
-      <Header />
-
-      <Container style={{ margin: '0', padding: '0' }} fluid>
-        <Row>
+      <Container className='g-0' style={{ maxWidth: '100%' }} fluid>
+        <Row className='g-0'>
+          <Col>
+            <Header />
+          </Col>
+        </Row>
+        <Row className='g-0'>
           <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
             <AboutSection />
           </Col>
         </Row>
-        <Row>
-          <Col>
+        <Row className='g-0'>
+          <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
             <CaroucelSection />
           </Col>
         </Row>
-        <Row>
+        <Row className='g-0'>
           <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
             <Roadmap />
           </Col>
         </Row>
-        {/* <Row>
+        {
+          // Will add back in after frequent questions have been asked
+          /* <Row>
           <Col style={centerStyle}>
             <FAQSection />
           </Col>
-        </Row> */}
-        <Row>
-          <Col style={{ ...centerStyle, backgroundColor: '#FF7BEA' }}>
+        </Row> */
+        }
+        <Row className='g-0'>
+          <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
             <MeetTeamSection />
           </Col>
         </Row>
-        <Row>
-          <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
+        <Row className='g-0'>
+          <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
             <CommunitySection />
           </Col>
         </Row>
+        <Row className='g-0'>
+          <Col>
+            <footer className={styles.footer}>
+              NumuVerse {'  '}
+              <Image
+                src='/NumuLogo.png'
+                alt='MetaMorf image'
+                width={30}
+                height={30}
+              />
+            </footer>
+          </Col>
+        </Row>
       </Container>
-
-      <footer className={styles.footer}>
-        NumuVerse {'  '}
-        <Image
-          src='/NumuLogo.png'
-          alt='MetaMorf image'
-          width={30}
-          height={30}
-        />
-      </footer>
-    </div>
+    </>
   );
 };
 
