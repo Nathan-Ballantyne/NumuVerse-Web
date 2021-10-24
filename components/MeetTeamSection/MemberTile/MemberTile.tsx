@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap';
+import styles from '../MeetTeamSection.module.css';
 
 type MemberTileProps = {
   pfpImage: string;
@@ -8,24 +9,9 @@ type MemberTileProps = {
 
 const MemberTile = ({ pfpImage, name, role }: MemberTileProps) => {
   return (
-    <Card
-      style={{
-        width: '20rem',
-        textAlign: 'center',
-        backgroundColor: '#56E1FF',
-        border: 'none',
-      }}
-    >
+    <Card className={styles.memberTileCard}>
       <Card.Img variant='top' src={pfpImage} />
-      <Card.Title
-        style={{
-          padding: '1rem',
-          color: 'black',
-          textAlign: 'left',
-          fontSize: '2rem',
-        }}
-        className='sectionTitle'
-      >
+      <Card.Title className={styles.memberName}>
         {name + ` - ${role}`}
       </Card.Title>
     </Card>

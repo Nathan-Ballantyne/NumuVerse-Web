@@ -1,5 +1,4 @@
 .container {
-  /* padding-bottom: 3rem; */
   width: 100%;
   text-align: center;
   display: flex;
@@ -9,4 +8,18 @@
 .title {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+}
+
+.memberTileCard {
+  width: 20rem;
+  text-align: center;
+  background-color: #56e1ff;
+  border: none;
+}
+
+.memberName {
+  padding: 1rem;
+  color: black;
+  text-align: left;
+  font-size: 2rem;
 }
