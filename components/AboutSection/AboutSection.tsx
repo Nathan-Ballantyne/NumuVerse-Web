@@ -8,33 +8,13 @@ const AboutSection = () => {
     <Container fluid className={styles.aboutSection}>
       <Row>
         <Col>
-          <div
-            style={{
-              paddingTop: '1rem',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
+          <div className={styles.image}>
             <Image src={numuImage} alt='numu image' width={350} height={350} />
           </div>
         </Col>
         <Col>
-          <div
-            style={{
-              fontSize: '20px',
-              justifyContent: 'center',
-              alignItems: 'center',
-              width: '40%',
-            }}
-          >
-            <h1
-              style={{
-                paddingTop: '3rem',
-                paddingBottom: '1rem',
-              }}
-              className='sectionTitle'
-            >
+          <div className={styles.text}>
+            <h1 className={['sectionTitle', styles.title].join(' ')}>
               Meet the Numus.
             </h1>
             <div className='textColor'>
