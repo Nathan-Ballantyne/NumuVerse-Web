@@ -5,7 +5,7 @@ import desertEnv from '../../public/OG_Desert_026.png';
 
 const CaroucelSection = () => {
   return (
-    <Carousel style={{ margin: '0', padding: '0' }}>
+    <Carousel>
       <Carousel.Item interval={2000}>
         <Image src={coralEnv} alt='coral environment' placeholder='blur' />
       </Carousel.Item>
