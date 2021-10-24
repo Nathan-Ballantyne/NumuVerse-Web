@@ -12,7 +12,7 @@ const CommunitySection = () => {
               Join the community
             </h2>
           </Card.Title>
-          <div style={{ paddingBottom: '1rem' }} className='titleColorWhite'>
+          <div className={['titleColorWhite', styles.textContainer].join(' ')}>
             <p>
               We numus are a friendly bunch, come and join in the fun over on
               discord!
@@ -22,12 +22,7 @@ const CommunitySection = () => {
               official social channels.
             </p>
           </div>
-          <a
-            href={SOCIALLINKS.DISCORD}
-            target='_blank'
-            rel='noreferrer'
-            style={{ display: 'inline-block' }}
-          >
+          <a href={SOCIALLINKS.DISCORD} target='_blank' rel='noreferrer'>
             <Button variant='primary'>Join our Discord</Button>
           </a>
         </Card.Body>
