@@ -10,12 +10,7 @@ const SocialLinks = () => {
       <Container>
         <Row>
           <Col>
-            <a
-              href={SOCIALLINKS.TWITTER}
-              target='_blank'
-              rel='noreferrer'
-              style={{ display: 'inline-block' }}
-            >
+            <a href={SOCIALLINKS.TWITTER} target='_blank' rel='noreferrer'>
               <div className={styles.iconBackground}>
                 <Image
                   src='/twitter.svg'
@@ -30,12 +25,7 @@ const SocialLinks = () => {
             <Image src='/opensea.svg' alt='Opensea' height={30} width={30} />
           </div> */}
 
-            <a
-              href={SOCIALLINKS.DISCORD}
-              target='_blank'
-              rel='noreferrer'
-              style={{ display: 'inline-block' }}
-            >
+            <a href={SOCIALLINKS.DISCORD} target='_blank' rel='noreferrer'>
               <div className={styles.iconBackground}>
                 <Image
                   src='/discord.svg'
