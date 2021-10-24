@@ -1,4 +1,4 @@
-import { Row, Col, Card } from 'react-bootstrap';
+import styles from '../Roadmap.module.css';
 
 type RoadmapItemProps = {
   title: string;
@@ -7,29 +7,10 @@ type RoadmapItemProps = {
 
 const RoadmapItem = ({ title, sentences }: RoadmapItemProps) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <div
-        style={{
-          width: '50rem',
-        }}
-      >
+    <div className={styles.itemContainer}>
+      <div className={styles.itemWidth}>
         <h2 className='titleColorWhite'>{title}</h2>
-        <div
-          style={{
-            backgroundColor: '#CEE8FF',
-            width: '100%',
-            padding: '2rem',
-            margin: '2rem 2rem 2rem 0',
-            borderRadius: '0.2rem',
-          }}
-          className='textColor'
-        >
+        <div className={['textColor', styles.sentenses].join(' ')}>
           {sentences.map((sentence) => (
             <p key={sentence}>{sentence}</p>
           ))}

@@ -36,11 +36,7 @@ const roadmapItems: { title: string; sentences: string[] }[] = [
 
 const Roadmap = () => {
   return (
-    <div
-      style={{
-        width: '100%',
-      }}
-    >
+    <div className={styles.container}>
       <div className={styles.details}>
         <h1 className='titleColorWhite'>Roadmap</h1>
       </div>
