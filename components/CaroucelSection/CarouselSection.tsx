@@ -7,10 +7,10 @@ const CaroucelSection = () => {
   return (
     <Carousel style={{ margin: '0', padding: '0' }}>
       <Carousel.Item interval={2000}>
-        <Image src={coralEnv} alt='coral environment' />
+        <Image src={coralEnv} alt='coral environment' placeholder='blur' />
       </Carousel.Item>
       <Carousel.Item interval={2000}>
-        <Image src={desertEnv} alt='desert environment' />
+        <Image src={desertEnv} alt='desert environment' placeholder='blur' />
       </Carousel.Item>
     </Carousel>
   );
