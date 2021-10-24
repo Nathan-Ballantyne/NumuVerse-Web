@@ -6,7 +6,7 @@ import numuImage from '../../public/Numu-Barnacle-No-BKG.png';
 const AboutSection = () => {
   return (
     <Container fluid className={styles.aboutSection}>
-      <Row>
+      <Row className='g-0'>
         <Col>
           <div className={styles.image}>
             <Image src={numuImage} alt='numu image' width={350} height={350} />

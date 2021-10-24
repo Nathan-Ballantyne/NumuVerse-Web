@@ -10,7 +10,7 @@ const MeetTeamSection = () => {
       </h1>
       <div className={styles.container}>
         <Container fluid>
-          <Row>
+          <Row className='g-0'>
             <Col>
               <MemberTile pfpImage='/Numu_Sue.png' name='SUE' role='ART' />
             </Col>

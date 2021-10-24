@@ -12,7 +12,7 @@ const FAQSection = () => {
           paddingTop: '1rem',
         }}
       >
-        <Row>
+        <Row className='g-0'>
           <Col>
             <FAQItem
               title='How much do they cost and what is the total supply?'
@@ -28,7 +28,7 @@ const FAQSection = () => {
             />
           </Col>
         </Row>
-        <Row>
+        <Row className='g-0'>
           <Col>
             <FAQItem
               title='What is the best crew mix to have?'

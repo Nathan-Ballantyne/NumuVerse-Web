@@ -8,7 +8,7 @@ const SocialLinks = () => {
   return (
     <div className={styles.container}>
       <Container>
-        <Row>
+        <Row className='g-0'>
           <Col>
             <a href={SOCIALLINKS.TWITTER} target='_blank' rel='noreferrer'>
               <div className={styles.iconBackground}>
