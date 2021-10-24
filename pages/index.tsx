@@ -12,12 +12,6 @@ import Roadmap from '../components/Roadmap';
 import MeetTeamSection from '../components/MeetTeamSection';
 import CommunitySection from '../components/CommunitySection';
 
-const centerStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-};
-
 const Home: NextPage = () => {
   return (
     <>
@@ -29,42 +23,57 @@ const Home: NextPage = () => {
         />
         <link rel='icon' href='/NumuLogo.ico' />
       </Head>
-      <Container className='g-0' style={{ maxWidth: '100%' }} fluid>
+      <Container className='g-0' fluid>
         <Row className='g-0'>
           <Col>
             <Header />
           </Col>
         </Row>
         <Row className='g-0'>
-          <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
+          <Col
+            className={styles.centerCol}
+            style={{ backgroundColor: '#56E1FF' }}
+          >
             <AboutSection />
           </Col>
         </Row>
         <Row className='g-0'>
-          <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
+          <Col
+            className={styles.centerCol}
+            style={{ backgroundColor: '#547094' }}
+          >
             <CaroucelSection />
           </Col>
         </Row>
         <Row className='g-0'>
-          <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
+          <Col
+            className={styles.centerCol}
+            style={{ backgroundColor: '#547094' }}
+          >
             <Roadmap />
           </Col>
         </Row>
         {
           // Will add back in after frequent questions have been asked
           /* <Row>
-          <Col style={centerStyle}>
+          <Col className={styles.centerCol}>
             <FAQSection />
           </Col>
         </Row> */
         }
         <Row className='g-0'>
-          <Col style={{ ...centerStyle, backgroundColor: '#56E1FF' }}>
+          <Col
+            className={styles.centerCol}
+            style={{ backgroundColor: '#56E1FF' }}
+          >
             <MeetTeamSection />
           </Col>
         </Row>
         <Row className='g-0'>
-          <Col style={{ ...centerStyle, backgroundColor: '#547094' }}>
+          <Col
+            className={styles.centerCol}
+            style={{ backgroundColor: '#547094' }}
+          >
             <CommunitySection />
           </Col>
         </Row>
