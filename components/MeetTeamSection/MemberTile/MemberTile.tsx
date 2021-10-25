@@ -10,7 +10,7 @@ type MemberTileProps = {
 const MemberTile = ({ pfpImage, name, role }: MemberTileProps) => {
   return (
     <Card className={styles.memberTileCard}>
-      <Card.Img variant='top' src={pfpImage} />
+      <Card.Img variant='top' src={pfpImage} alt={`${name} pfp`} />
       <Card.Title className={styles.memberName}>
         {name + ` - ${role}`}
       </Card.Title>
