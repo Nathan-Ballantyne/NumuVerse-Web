@@ -15,14 +15,17 @@ const AboutSection = () => {
         <Col>
           <div className={styles.text}>
             <h1 className={['sectionTitle', styles.title].join(' ')}>
-              Meet the Numus.
+              Meet The Numus
             </h1>
             <div className='textColor'>
-              <p>Numus are what they eat - making each one of them unique! </p>
+              <p>Numus are what they eat - making each one unique!</p>
 
-              <p> They live in one of five different environments. </p>
+              <p>
+                They live across five different environments which shape their
+                character, and give them unique abilities in the battle arena.
+              </p>
               <p>All numus are hand drawn, unique NFT&#39;s</p>
-              <p>Collect your team and prepare for battle! </p>
+              <p>Collect your team and prepare for battle!</p>
             </div>
           </div>
         </Col>
